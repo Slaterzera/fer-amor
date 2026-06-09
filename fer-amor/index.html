@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#3b0615" />
+  <title>Para a Fernanda ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <audio id="musicaFundo" src="assets/musica/musica.mp3" preload="auto" loop></audio>
+
+  <div class="topbar" aria-label="Progresso da carta">
+    <div class="progress"><span id="progressBar"></span></div>
+    <span id="progressText">1 de 8</span>
+  </div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Ligar ou pausar música">
+    <span id="musicIcon">♪</span>
+    <span id="musicText">tocar</span>
+  </button>
+
+  <main class="app">
+    <section class="page hero active" id="inicio" data-step="1">
+      <div class="hero-card compact-card">
+        
+        <h1>Para a Fernanda</h1>
+        <p class="subtitle">Uma cartinha da forma com que eu dedico parte minha vida todos os dias, feita para você ir abrindo aos poucos.</p>
+        <div class="hint-card">Toque nos botões, nas fotos e nos corações. Uma música vai tocar.</div>
+        <button class="primary-btn full-btn" data-next="capitulo1">Começar ❤️</button>
+      </div>
+    </section>
+
+    <section class="page letter-page" id="capitulo1" data-step="2">
+      <div class="paper mobile-paper">
+        <p class="date">12 de junho</p>
+        <h2>Meu amor,</h2>
+        <p>Não sei como chegamos até aqui, faz somente um mês. Mas eu queria que você nunca tivesse medo de nós. Eu te escolhi, Fernanda, e essa escolha vive em mim todos os dias.</p>
+        <p>Você não é apenas alguém que eu amo. Você se tornou parte do que eu sou: dona do meu carinho, da minha admiração e da minha vontade de construir uma vida bonita.</p>
+        <button class="heart-reveal" type="button" data-message="Você é casa, calma e futuro para mim.">Tocar no coração 💗</button>
+        <button class="primary-btn full-btn" data-next="capitulo2">Continuar</button>
+      </div>
+    </section>
+
+    <section class="page letter-page" id="capitulo2" data-step="3">
+      <div class="paper mobile-paper">
+        <h2>Nossos sonhos</h2>
+        <p>Desde que você chegou, você renovou em mim sonhos que eu guardava com cuidado: o sonho de ter uma família, de servir a Deus ao lado de uma mulher incrível e de viver planos com amor, fé e propósito.</p>
+        <p>Eu não penso em desistir da gente. Quero lutar pelo nosso futuro, pela nossa paz, pelos nossos sonhos e por tudo aquilo que tantas vezes imaginamos juntos.</p>
+        <button class="heart-reveal" type="button" data-message="Eu escolho construir, cuidar, permanecer e amar você todos os dias.">Guardar promessa 💞</button>
+        <button class="primary-btn full-btn" data-next="capitulo3">Abrir próxima parte</button>
+      </div>
+    </section>
+
+    <section class="page letter-page" id="capitulo3" data-step="4">
+      <div class="paper mobile-paper">
+        <h2>Você</h2>
+        <p>Eu amo seu carinho, seu abraço, sua voz dizendo que me ama, seu jeito de ser e até os detalhes pequenos que talvez você nem perceba, mas que me fazem te admirar ainda mais.</p>
+        <p>Fernanda, quero te conquistar de novo todos os dias. Quero cuidar do seu coração, respeitar seus medos, caminhar com você e jamais soltar sua mão.</p>
+        <button class="heart-reveal" type="button" data-message="Peço a Deus que nos guarde, nos fortaleça e nos permita viver muitos dias 12 juntos.">Abrir um pedido 🙏</button>
+        <button class="primary-btn full-btn" data-next="memorias">Ver nossas fotos 📸</button>
+      </div>
+    </section>
+
+    <section class="page memories-page" id="memorias" data-step="5">
+      <div class="section-head">
+        <p class="eyebrow">Nossas memórias</p>
+        <h2>Toque nas fotos</h2>
+        <p>Cada foto abre uma mensagem. Substitua as imagens da pasta <strong>assets/fotos</strong> pelas fotos de vocês.</p>
+      </div>
+
+      <div class="gallery mobile-gallery">
+        <button class="photo-card" data-message="Desde o dia em que te conheci, algo em mim soube que você seria especial.">
+          <img src="assets/fotos/foto1.jpg" alt="Nossa foto 1" onerror="this.src='assets/placeholder.svg'">
+          <span>Quando tudo começou</span>
+        </button>
+        <button class="photo-card" data-message="Seu sorriso é uma das minhas partes favoritas da vida. Ao seu lado eu consigo imaginar casa, família, paz e futuro.">
+          <img src="assets/fotos/foto2.jpg" alt="Nossa foto 2" onerror="this.src='assets/placeholder.svg'">
+          <span>Nosso futuro</span>
+        </button>
+      </div>
+
+      <button class="primary-btn full-btn sticky-next" data-next="promessa">Minha promessa 💍</button>
+    </section>
+
+    <section class="page promise-page" id="promessa" data-step="6">
+      <div class="promise-card compact-card">
+        <p class="eyebrow">Minha promessa</p>
+        <h2>Eu escolho você.</h2>
+        <p>Escolho você nos dias leves, nos dias difíceis, nos sonhos grandes e nos detalhes pequenos. Escolho construir, cuidar, lutar, permanecer e amar.</p>
+        <p>Você é meu amor, minha inspiração, a futura mamãe do Tito e da Ester, a mulher que eu admiro e amo e quero amar cada vez mais com todas as forças.</p>
+        <p class="signature">Com todo meu amor,<br><span>Seu eterno fã ❤️</span></p>
+        <button class="primary-btn full-btn" data-next="pedido">Abrir a última surpresa 💍</button>
+      </div>
+    </section>
+
+    <section class="page proposal-page" id="pedido" data-step="7">
+      <div class="proposal-card compact-card">
+        <p class="eyebrow">Última surpresa</p>
+        <h2>Fernanda...</h2>
+        <p>Depois de tudo que eu escrevi, de tudo que eu sonho e de tudo que eu sinto, eu sei que você é a pessoa certa, num futuro próximo...</p>
+        <h3>Você deseja casar comigo?</h3>
+        <p class="proposal-note">Pense bem... mas eu já deixei uma pequena ajudinha no botão certo. ❤️</p>
+        <div class="proposal-actions" id="proposalActions">
+          <button class="yes-btn" id="yesBtn" type="button">Sim, meu amor 💍</button>
+          <button class="no-btn" id="noBtn" type="button">Não 😅</button>
+        </div>
+        <p class="yes-message" id="yesMessage" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="page final-page" id="final" data-step="8">
+      <div class="final-card compact-card">
+        <p class="eyebrow">Guarde sempre no coração...</p>
+        <h2>Obrigado</h2>
+        <p>Volte sempre para essa mensagem.</p>
+        <p class="final-love">Eu te amo</p>
+        <button class="secondary-btn full-btn restart-btn" data-next="inicio">Ver tudo de novo ❤️</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="closeModal" aria-label="Fechar">×</button>
+      <p id="modalMessage"></p>
+      <button class="primary-btn full-btn" id="modalOk" type="button">Continuar ❤️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

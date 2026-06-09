@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffccd8"/>
+      <stop offset="1" stop-color="#8f1538"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g)"/>
+  <text x="450" y="560" text-anchor="middle" font-size="70" fill="white" font-family="Arial">Nossa foto</text>
+  <text x="450" y="650" text-anchor="middle" font-size="38" fill="white" font-family="Arial">troque por uma imagem</text>
+  <text x="450" y="745" text-anchor="middle" font-size="95" fill="white" font-family="Arial">❤️</text>
+</svg>
